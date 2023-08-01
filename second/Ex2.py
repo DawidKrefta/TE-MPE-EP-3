@@ -1,6 +1,6 @@
 import json
 
-file_path = "C:\\Users\\dawid\\OneDrive\\Pulpit\\Dawid\\Stypendia\\CERN_2023\\TE-MPE-EP-3\\second\\deps.json"
+file_path = "C:\\Users\\dawid\\OneDrive\\Documents\\TE-MPE-EP-3\\second\\deps.json"
 
 
 def make_graph(filename: str) -> dict:
@@ -42,6 +42,6 @@ def print_graph(graph: dict) -> None:
             spaces = "  " * (i + 1)
             print(f"{spaces}- {dependency}")
 
-
-graph = make_graph(file_path)
-print_graph(graph)
+if __name__ == "__main__":
+    graph = make_graph(file_path)
+    print_graph(graph)
