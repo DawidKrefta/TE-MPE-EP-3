@@ -24,14 +24,14 @@ def deduplicate(input_list: list) -> list:
 
 
 # @profile
-# def deduplicate_new(input_list: list) -> list:
-#     seen = []
-#     duplicates = []
-#     for item in input_list:
-#         if item in seen and item not in duplicates:
-#             duplicates.append(item)
-#         seen.append(item)
-#     return duplicates
+def deduplicate_new(input_list: list) -> list:
+    seen = []
+    duplicates = []
+    for item in input_list:
+        if item in seen and item not in duplicates:
+            duplicates.append(item)
+        seen.append(item)
+    return duplicates
 
 # input = ["b", "a", "c", "c", "e", "a", "c", "d", "c", "d"]
 
